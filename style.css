@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: #1b1b1b;
+    --light: #ececec;
+    --accent: #ed1382;
+}
+
+body {
+    background-color: var(--dark);
+    color: #fff;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5em 0;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.8em;
+}
+
+.input-area {
+    display: flex;
+}
+
+#pattern-search-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    padding: 0.6em 0.75em;
+    border-radius: 8px 0 0 8px;
+    font: inherit;
+}
+
+#pattern-search-submit {
+    border: none;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 0.6em 1em;
+    border-radius: 0 8px 8px 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--accent);
+    margin: 1.25em 0;
+}
+
+.contact-display {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.contact-card{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 1em 1.1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    font-size: 1.1rem;
+}
+#pattern-search-input:focus {
+    outline: 2px solid var(--accent);
+}
